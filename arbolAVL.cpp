@@ -59,5 +59,12 @@ friend class AVL;
                   }
                 }
                 void AVL::Insertar(const int dat){
+                  Nodo *padre=NULL,
+                 cout <<"Insertar: "<< dat << endl;
+                 actual = raiz;
+                 while(!Vacio(actual)&&dat != actual->dato){
+                  padre=actual;
+                  if(dat >actual->dato) actual = actual->derecho;
+                  else fi(dat < actual->dato) actual = actual ->izquierdo;
                   
                 
